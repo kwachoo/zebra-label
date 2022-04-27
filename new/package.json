@@ -1,0 +1,11 @@
+{
+  "name": "kod_kreskowy",
+  "version": "1.0.0",
+  "description": "Drukowanie etykiet na drukarce zebra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IOW SERVICE",
+  "license": "ISC"
+}
