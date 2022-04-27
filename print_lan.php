@@ -51,12 +51,12 @@ if(isset($wyslij)) {
             fclose($polaczenie);
             //echo "<h1></h1>Dane wysłane do drukarki ZEBRA</h1><br/>";
             ?>
-                <h1 class="display-4">Dane wysłane do drukarki ZEBRA</h1>
-                <a href="index.php" class="btn btn-success">Drukuj inną etykietę</a>
+                <h1 class="display-4">Data is send to ZEBRA printer</h1>
+                <a href="index.php" class="btn btn-success">Generate and print another label</a>
             <?php
         }
         catch (Exception $e) {
-            echo "Blad: ", $e->getMessage(), "\n";
+            echo "Error: ", $e->getMessage(), "\n";
         }
     }
     else{
@@ -67,14 +67,14 @@ if(isset($wyslij)) {
                 $a = $a + 1;
             }
             catch (Exception $e) {
-                echo "Blad: ", $e->getMessage(), "\n";
+                echo "Error: ", $e->getMessage(), "\n";
             }
         }
         /
         ?>
-        <h1 class="display-4">Dane wysłane do drukarki ZEBRA</h1>
-        <h3>Ilość kopii: <b><?php echo $a; ?></b></h3>
-        <a href="index.php" class="btn btn-success">Drukuj inną etykietę</a>
+        <h1 class="display-4">Data is send to ZEBRA printer</h1>
+        <h3>No of copies: <b><?php echo $a; ?></b></h3>
+        <a href="index.php" class="btn btn-success">Generate and print another label</a>
         <?php
     }
 
